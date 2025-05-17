@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  {% if page.image %}
+    <img src="{{ page.image }}" alt="{{ page.title }}" style="max-width: 100%; border-radius: 8px;">
+  {% endif %}
+
+  {% if page.summary %}
+    <div class="post-summary">
+      <p>{{ page.summary }}</p>
+    </div>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

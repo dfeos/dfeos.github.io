@@ -46,6 +46,8 @@ collections:
     output: true
   tutorials:
     output: true
+  authors:
+    output: true
 
 
 # Exclude from processing.
